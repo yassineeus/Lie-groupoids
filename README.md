@@ -15,7 +15,7 @@ layout: default
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2025-05-12**|**Classical symmetry enriched topological orders and distinct monopole charges for dipole-octupole spin ices**|Pengwei Zhao, Gang v. Chen|[2505.07805](http://arxiv.org/abs/2505.07805)|null|
+|**1987-01-01**|**Lie Groupoids and Lie Algebroids in Differential Geometry**|K. Mackenzie|[driverpdf](https://drive.google.com/file/d/1DBMKN1iGqXmbHI_w4aEO7jNpHjfWknR9/view?usp=drive_link)|null|
 |**2025-05-12**|**Quon Classical Simulation: Unifying Clifford, Matchgates and Entanglement**|Zixuan Feng, Zhengwei Liu, Fan Lu, Ningfeng Wang|[2505.07804](http://arxiv.org/abs/2505.07804)|null|
 |**2025-05-12**|**Melting of Charge Density Waves in Low Dimensions**|Jeremy M. Shen, Alex Stangel, Suk Hyun Sung, Ismail El Baggari, Kai Sun, Robert Hovden|[2505.07569](http://arxiv.org/abs/2505.07569)|null|
 |**2025-05-12**|**Large-area topological wireless power transfer**|Luyao Wan, Han Zhang, Yunhui Li, Yaping Yang, Hong Chen, Zhiwei Guo|[2505.07462](http://arxiv.org/abs/2505.07462)|null|
