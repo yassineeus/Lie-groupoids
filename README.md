@@ -7,7 +7,7 @@ layout: default
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href=#tqft,-topological-order,-generalized-symmetry>TQFT, Topological order, Generalized symmetry</a></li>
+    <li><a href=#Lie groupoids,-algebroids>Lie groupoids,-algebroids</a></li>
   </ol>
 </details>
 
