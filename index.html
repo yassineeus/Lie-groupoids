@@ -4,20 +4,105 @@
   <meta charset="UTF-8">
   <title>Geometric Structures References</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive collection of mathematical references on geometric structures">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <!-- Additional CSS customization -->
+  <style>
+    :root {
+      --theme-color: #42b983;
+      --sidebar-width: 300px;
+    }
+    .sidebar-nav li a:hover {
+      background-color: rgba(66, 185, 131, 0.1);
+    }
+    .markdown-section a {
+      color: var(--theme-color);
+      font-weight: 500;
+    }
+    .markdown-section a:hover {
+      text-decoration: underline;
+    }
+    /* For PDF embed container */
+    .pdf-container {
+      height: 80vh;
+      width: 100%;
+      margin: 20px 0;
+      border: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
   <div id="app">Chargement...</div>
   <script>
     window.$docsify = {
       name: '📘 Geometric Structures',
-      repo: '',
+      repo: '', // Add your GitHub repository URL here if desired
       loadSidebar: true,
-      subMaxLevel: 2,
-      search: 'auto'
+      subMaxLevel: 3,
+      auto2top: true,
+      
+      // Search configuration
+      search: {
+        maxAge: 86400000, // Expiration time: 1 day
+        paths: 'auto',
+        placeholder: 'Rechercher...',
+        noData: 'Aucun résultat trouvé',
+        depth: 6,
+        hideOtherSidebarContent: false
+      },
+      
+      // Add pagination
+      pagination: {
+        previousText: 'Précédent',
+        nextText: 'Suivant',
+        crossChapter: true
+      },
+      
+      // Copy code button
+      copyCode: {
+        buttonText: 'Copier',
+        errorText: 'Erreur',
+        successText: 'Copié!'
+      },
+      
+      // External links open in new tab
+      externalLinkTarget: '_blank',
+      
+      // Better formatting of references
+      formatUpdated: '{DD}/{MM}/{YYYY}',
+      
+      // Add footnotes support
+      footnote: {
+        tag: 'footnote',
+        placeholder: 'Note:',
+      },
+      
+      // PDF embedding support
+      plugins: [
+        function(hook, vm) {
+          // Support for PDF embedding with a custom tag: [pdf](url)
+          hook.beforeEach(function(content) {
+            return content.replace(/\[pdf\]\(([^)]+)\)/g, function(match, url) {
+              return `<div class="pdf-container">
+                       <iframe src="${url}" width="100%" height="100%" frameborder="0"></iframe>
+                     </div>`;
+            });
+          });
+        }
+      ]
     };
   </script>
+  <!-- Core Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+  <!-- Plugins -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-latex.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 </body>
 </html>
