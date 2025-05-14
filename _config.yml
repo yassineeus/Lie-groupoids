@@ -1,0 +1,17 @@
+title: Mathematics Reference Collection
+description: A comprehensive collection of mathematical references
+theme: jekyll-theme-minimal
+baseurl: ""
+url: ""
+
+# Navigation structure
+collections:
+  topics:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
