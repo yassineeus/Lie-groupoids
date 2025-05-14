@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      {% include sidebar.html %}
+    </div>
+    
+    <div class="main-content">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search references...">
+        <div id="search-results"></div>
+      </div>
+      
+      <div class="content">
+        {{ content }}
+      </div>
+      
+      <div id="pdf-viewer" class="pdf-viewer">
+        <!-- PDF viewer will be loaded here -->
+      </div>
+    </div>
+  </div>
+  
+  <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/viewer.js' | relative_url }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+</body>
+</html>
