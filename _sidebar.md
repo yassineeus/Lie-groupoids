@@ -1,0 +1,8 @@
+- 📚 **Table des matières**
+  - [Introduction](/README.md)
+  - [Symplectic Geometry](/Symplectic geometry.md)
+  - [Symplectic Reduction](/Symplectic reduction.md)
+  - [Dirac Manifolds](/Dirac Manifolds.md)
+  - [Lie Groupoids](/Lie groupoids.md)
+  - [Algebraic Geometry](/Algebraic geometry.md)
+  - [Algebraic Stacks](/Algebraic Stacks)
