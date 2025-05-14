@@ -1,0 +1,25 @@
+---
+layout: default
+title: Lie Groups and Lie Algebras
+---
+
+<div class="reference-list">
+  <h2>Lie Groups and Lie Algebras</h2>
+  
+  <h3>Recent Publications (2020-2025)</h3>
+  <div class="reference-item">
+    <a href="#" class="reference-link" data-url="https://arxiv.org/abs/2504.09812">
+      Representation theory of quantum Lie algebras at roots of unity
+    </a>
+    <div>V. Toledano Laredo, E. Meinrenken (2025)</div>
+  </div>
+  
+  <div class="reference-item">
+    <a href="#" class="reference-link" data-url="https://arxiv.org/abs/2412.06433">
+      Geometric quantization of coadjoint orbits of semisimple Lie groups
+    </a>
+    <div>S. Evens, B. Kostant (2024)</div>
+  </div>
+  
+  <!-- More references... -->
+</div>
