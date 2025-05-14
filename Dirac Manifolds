@@ -1,18 +1,19 @@
+
 ---
 layout: default
 ---
 
-> Automatically updated on 2025.05.14
+> Automatically updated on 2025.05.13
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href=#Dirac Manifolds,>Dirac Manifolds</a></li>
+    <li><a href=#Lie groupoids,-algebroids>Lie groupoids,-algebroids</a></li>
   </ol>
 </details>
 
+## Lie groupoids,-algebroids
 
-## Dirac Manifolds
 | Publish Date | Title | Authors | PDF | Code |
 |:------------:|:---------------------------------------------|:-------------------------------|:----------------------------------------------------------|:-----|
 |**2025-04-26**|**Dirac structures in nonholonomic mechanics**|Katarzyna Grabowska, Michalina Borczyńska, Joanna Majsak, Tomasz Sobczak|[2504.18853](https://arxiv.org/abs/2504.18853)|null|
@@ -33,14 +34,6 @@ layout: default
 |**2000-12-15**|**The eta-invariant, Maslov index, and spectral flow for Dirac-type operators on manifolds with boundary**|Paul Kirk, Matthias Lesch|[math/0012123](https://arxiv.org/abs/math/0012123)|null|
 |**2000-11-27**|**Index theorem for equivariant Dirac operators on non-compact manifolds**|Maxim Braverman|[math-ph/0011045](https://arxiv.org/abs/math-ph/0011045)|null|
 |**2000-12-29**|**Eigenvalues of the Dirac Operator on Manifolds with Boundary**|Oussama Hijazi, Sebastian Montiel, Xiao Zhang|[math/0012261](https://arxiv.org/abs/math/0012261)|null|
-
-
-
-
-
-
-
-
 
 
 
