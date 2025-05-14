@@ -1,3 +1,5 @@
+from update_paper_links import update_paper_links
+
 import os
 import re
 import json
