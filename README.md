@@ -1,15 +1,12 @@
 # Geometric Structures References
 
-Welcome to this reference hub on geometric structures in mathematical physics and algebraic geometry.  
-Here you will find curated notes and paper links on:
-
-- Dirac Manifolds
-- Lie Groupoids
-- Symplectic Geometry and Reduction
-- Algebraic Geometry
-- Algebraic Stacks
-- Topological Quantum Field Theory (TQFT)
+Bienvenue dans ce référentiel contenant des liens vers des articles, livres et ressources en géométrie différentielle, physique mathématique, et théorie des catégories.
 
 ---
 
-🧠 Maintained by [yassineeus](https://github.com/yassineeus)
+## Thèmes couverts
+
+- Dirac manifolds
+- Symplectic geometry & reduction
+- TQFT, AQFT, Quantum Field Theory
+- Algebraic Stacks & Algebraic Geometry
