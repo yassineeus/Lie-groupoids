@@ -1,73 +1,85 @@
-# TODO: add papers by configuration file
+# Configuration schema for automated extraction of Lie groupoid and Lie algebroid literature
 base_url: "https://arxiv.paperswithcode.com/api/v0/papers/"
-user_name: "polyidiot"
-repo_name: "Arixv-TQFT"
-show_authors: False
-show_links: False
+user_name: "polyidiot"  # Maintain repository ownership attribution
+repo_name: "Arxiv-LieTheory"  # Modified repository name to reflect content domain
+show_authors: True  # Enable author display for precise attribution
+show_links: True  # Enable links to facilitate reference verification
 show_badge: False
-max_results: 10
-
+max_results: 100  # Expanded result count for comprehensive literature coverage
 publish_readme: True
 publish_gitpage: True
 publish_wechat: False
 
-# file paths
-json_readme_path: './docs/TQFT-arxiv-daily.json'
-json_gitpage_path: './docs/TQFT-arxiv-daily-web.json'
-json_wechat_path: './docs/TQFT-arxiv-daily-wechat.json'
-
+# Output file path specifications
+json_readme_path: './docs/LieTheory-arxiv-daily.json'
+json_gitpage_path: './docs/LieTheory-arxiv-daily-web.json'
+json_wechat_path: './docs/LieTheory-arxiv-daily-wechat.json'
 md_readme_path: 'README.md'
 md_gitpage_path: './docs/index.md'
 md_wechat_path: './docs/wechat.md'
 
-# keywords to search
+# Domain-specific keywords with precise terminological filters
 keywords:
-    "TQFT, Topological order, Generalized symmetry": 
-        filters: ["TQFT", 
-        "Topological Field Theory", 
-        "Topological Quantum Field Theory",
-        "Topological defect", 
-        "Homotopical quantum field theory", 
-        "Tube algebra", 
-        "Honeycomb Floquet code", 
-        "Gravitational anomaly", 
-        "Multifusion String-net", 
-        "Tutaev-Viro TQFT", 
-        "Reshetikhin-Turaev TQFT",
-        "Chern-Simons theory", 
-        "Topological Order", 
-        "Topological Entanglement Entropy", 
-        "Toric Code", 
-        "Quantum Double Model", 
-        "Levin-Wen Model", 
-        "Walker-Wang Model",
-        "Anyon", 
-        "Symmetry-protected Topological Phase",
-        "Symmetry-enriched topological Phase",
-        "Fractional Statistics", 
-        "String-net Model", 
-        "TQFT", 
-        "Topological Field Theory", 
-        "Topological Quantum Field Theory",  
-        "Tube algebra",  
-        "Levin-Wen string-net",
-        "Topological Quantum Computation", 
-        "Topological Code",
-        "Topological Quantum Error-Correction", 
-        "X-cube model", 
-        "Haah cubic code", 
-        "XZZX surface code",
-        "SymTFT", 
-        "higher-form symmetry", 
-        "fusion category symmetry", 
-        "Haagerup fusion category symmetry",
-        "Haagerup CFT", 
-        "Anyonic chain", 
-        "Golden chain",
-        "Cluster state model", 
-        "Cluster ladder model",
-        "Gauging non-invertible symmetry",
-        "Gauging symmetry",
-        "Orbifold CFT",
-        "Subsystem symmetry",
-        "Topological defect line"]
+    "Lie Groupoids and Lie Algebroids": 
+        filters: [
+            # Fundamental objects and structures
+            "Lie groupoid", 
+            "Lie algebroid",
+            "Atiyah algebroid",
+            "Courant algebroid",
+            "VB-groupoid",
+            "LA-groupoid",
+            "symplectic groupoid",
+            "Poisson groupoid",
+            "contact groupoid",
+            
+            # Categorical and structural aspects
+            "differentiable stack",
+            "groupoid representation",
+            "algebroid representation",
+            "monoidal groupoid",
+            "Morita equivalence",
+            "groupoid cohomology",
+            "algebroid cohomology",
+            
+            # Integration theory
+            "integrability of Lie algebroids",
+            "integration of Lie algebroids",
+            "source-simply-connected",
+            "local Lie groupoid",
+            "A-path",
+            
+            # Connections to other mathematical structures
+            "Poisson-Nijenhuis structure",
+            "Dirac structure",
+            "generalized complex structure",
+            "multiplicative structure",
+            "multiplicative vector field",
+            "multiplicative differential form",
+            
+            # Higher structures
+            "higher Lie groupoid", 
+            "higher Lie algebroid",
+            "Lie infinity-algebroid",
+            "Lie 2-groupoid",
+            "Lie 2-algebroid",
+            "homotopy Poisson structure",
+            
+            # Related geometric structures
+            "Jacobi manifold",
+            "differentiable gerbe",
+            "Atiyah sequence",
+            "infinitesimal ideal system",
+            
+            # Applications and specialized topics
+            "groupoid action",
+            "Lie algebroid connection",
+            "tangent Lie algebroid",
+            "cotangent Lie algebroid",
+            "momentum map",
+            "reduction of Lie algebroids",
+            "gauge theory on Lie groupoids",
+            "deformation of Lie groupoids",
+            "bialgebroid",
+            "Hopf algebroid"
+        ]
