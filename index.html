@@ -6,127 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A comprehensive collection of mathematical references on geometric structures">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-  <!-- Custom theme with black and white color scheme -->
+  <!-- Additional CSS customization -->
   <style>
     :root {
-      --theme-color: #333;
+      --theme-color: #42b983;
       --sidebar-width: 300px;
-      --navbar-height: 60px;
-      --text-color-primary: #333;
-      --text-color-secondary: #555;
-      --bg-color-primary: #fff;
-      --bg-color-secondary: #f8f8f8;
-      --border-color: #eaeaea;
     }
-    
-    /* Base styles */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      color: var(--text-color-primary);
-      background-color: var(--bg-color-primary);
-    }
-    
-    /* Sidebar styles */
-    .sidebar {
-      background-color: var(--bg-color-secondary);
-      border-right: 1px solid var(--border-color);
-      padding-top: var(--navbar-height);
-    }
-    
-    .sidebar-nav li a {
-      color: var(--text-color-primary);
-    }
-    
     .sidebar-nav li a:hover {
-      background-color: rgba(0, 0, 0, 0.05);
-      color: #000;
+      background-color: rgba(66, 185, 131, 0.1);
     }
-    
-    .sidebar-nav li.active > a {
-      border-right: 2px solid var(--theme-color);
+    .markdown-section a {
       color: var(--theme-color);
-      font-weight: 600;
-    }
-    
-    /* Navbar styles */
-    .app-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: var(--navbar-height);
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-    }
-    
-    .app-nav a {
-      color: #fff;
-      margin-right: 20px;
-      text-decoration: none;
       font-weight: 500;
     }
-    
-    .app-nav a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Content styles */
-    .markdown-section {
-      max-width: 900px;
-      padding: 30px 15px 40px;
-    }
-    
-    .markdown-section a {
-      color: #000;
-      font-weight: 600;
-      text-decoration: underline;
-    }
-    
     .markdown-section a:hover {
-      color: #333;
+      text-decoration: underline;
     }
-    
-    /* Footer styles */
-    .footer {
-      text-align: center;
-      padding: 20px;
-      border-top: 1px solid var(--border-color);
-      color: var(--text-color-secondary);
-      font-size: 14px;
-      margin-top: 40px;
-    }
-    
-    /* PDF container */
+    /* For PDF embed container */
     .pdf-container {
       height: 80vh;
       width: 100%;
       margin: 20px 0;
-      border: 1px solid var(--border-color);
-    }
-    
-    /* Content width adjustment for navbar */
-    .content {
-      padding-top: var(--navbar-height);
+      border: 1px solid #eee;
     }
   </style>
 </head>
 <body>
-  <!-- Custom navigation bar -->
-  <nav class="app-nav">
-    <a href="#/">Home</a>
-    <a href="#/Algebraic%20geometry">Algebraic Geometry</a>
-    <a href="#/Lie%20Groups%20and%20Lie%20Algebras">Lie Theory</a>
-    <a href="#/Symplectic%20geometry">Symplectic</a>
-    <a href="#/TQFTs">TQFT</a>
-  </nav>
-  
   <div id="app">Chargement...</div>
-  
   <script>
     window.$docsify = {
       name: '📘 Mathematics Library',
@@ -171,7 +77,7 @@
         placeholder: 'Note:',
       },
       
-      // PDF embedding support and footer
+      // PDF embedding support
       plugins: [
         function(hook, vm) {
           // Support for PDF embedding with a custom tag: [pdf](url)
@@ -186,8 +92,8 @@
           // Add footer to each page
           hook.afterEach(function(html) {
             return html + `
-              <div class="footer">
-                <p>© Created by Yassine Ait Mohamed and authors - 2025</p>
+              <div class="footer" style="text-align: center; padding: 20px; border-top: 1px solid #eee; margin-top: 40px;">
+                <p>© Created by Yassine Ait Mohamed- 2025</p>
                 <p>research-mathematics-library</p>
               </div>
             `;
@@ -196,7 +102,6 @@
       ]
     };
   </script>
-  
   <!-- Core Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   
